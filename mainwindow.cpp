@@ -19,6 +19,7 @@ MainWindow::MainWindow(ArkanoidModel* arkanoidModel, QWidget *parent) :
     connect(timer, SIGNAL(timeout()), this, SLOT(timer_ticked()));
     gameArea = new GameArea(arkanoidModel);
     setCentralWidget(gameArea);
+    this->setWindowTitle("Arko");
 }
 
 MainWindow::~MainWindow()

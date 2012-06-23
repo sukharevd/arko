@@ -1,7 +1,9 @@
 // shield.cpp
 #include "shield.h"
 #include "arkanoidmodel.h"
-//#include "math.h"
+#include <algorithm>
+using std::max;
+using std::min;
 
 Shield::Shield(int* curLevel) {
     this->curLevel = curLevel;
@@ -26,9 +28,9 @@ void Shield::setPos(int pos) {
 }
 
 void Shield::moveLeft() {
-    pos -= 10;
+    pos = max(pos - 10, this->size >> 1);
 }
 
 void Shield::moveRight() {
-    pos += 10;
+    pos = min(pos + 10, ArkanoidModel::WIDTH - (this->size >> 1));
 }
