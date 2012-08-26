@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
   Copyright (C) 2010-2012 Dmitriy Sukharev.
@@ -20,8 +21,6 @@
   along with Arko.  If not, see <http://www.gnu.org/licenses/>.
 
 -->
-
-<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
